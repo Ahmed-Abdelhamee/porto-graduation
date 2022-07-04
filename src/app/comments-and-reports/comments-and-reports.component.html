@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comments and report </title>
+</head>
+<body>
+    <div class="container-fluid" style="padding-top: 20px;">
+        <div class="col-sm-3 card" *ngFor="let item of comments">
+            <p>{{item.email}}</p>
+            <hr>
+            <h4 style="color: red;">{{item.comment}}</h4>
+            <h4 style="color: rgb(184, 180, 77);">{{item.id}}</h4>
+            <button class="btn btn-danger text-center" (click)="delete(item.id)">delete</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calling</title>
+</head>
+<body>
+    <div class="container-fluid">
+       
+        <div class="col-12" style="padding-top: 20px;">
+            <div class="col-sm-5">
+                <div class="form-group formStyle">
+                    <img src="assets\msg.png" alt="email" class="emailPhoto1">
+                    <p  class="text1">
+                        You can send an email to technical support and write notes :
+                    </p>
+                    <p  class="text2">
+                        : يمكنك إرسال بريد إلكتروني إلى الدعم الفني وكتابة الملاحظات
+                    </p>
+        
+                    <form #userform="ngForm" (ngSubmit)="setComment(userform)">
+                        <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email" #email required ngModel> <br>
+                        <textarea class="form-control" rows="7" placeholder="Enter your message" id="comment" name="comment" #comment required ngModel></textarea>
+                        <br> 
+                        <div class="btnSend">
+                            <!-- <input type="submit" class="btn btn-primary" value="Send"> -->  <!-- btn color we make-->
+                            <input type="submit" class="btn btn-warning" value="Send"> <!-- btn color for 3abaset-->
+                        </div>
+                    </form>
+                    <br>
+                   <div class="alert alert-success" *ngIf="setalerttrue">
+                       {{msg}}
+                   </div>
+                   <div class="alert alert-danger" *ngIf="setalertfalse">
+                        {{msg}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-7">
+                <img src="assets\sendEmail.jpg" alt="message" class="emailPhoto2">
+            </div>
+            
+        </div>
+
+        <div class="col-sm-4 callingMsg">
+            <p>يمكنك التواصل معنا للاستفسار والمساعدة والابلاغ عن اي مشكلات او اعطال   , الخدمة مستمرة 24 ساعة</p>
+            <p>Contact us to inquire and report any problems or malfunctions, the service continues 24 hours</p>
+        </div>
+
+        <div class="col-sm-4">
+            <img src="assets\calling.jpg" alt="calling" class="callingPhoto">
+        </div>
+
+        <div class="col-sm-4 callingData">
+            <p style="color: red;">Phones</p>
+            <p>⁦+20 155 243 4550⁩</p>
+            <p>⁦+20 112 492 8181⁩</p>
+            <p>⁦+20 100 901 6938⁩</p>
+            <p>⁦+20 101 537 5783⁩</p>
+            <p>⁦+20 102 349 6640⁩</p>
+            <p>⁦+20 120 161 3538⁩</p>
+        </div>
+            
+        
+
+    </div>
+</body>
+</html>

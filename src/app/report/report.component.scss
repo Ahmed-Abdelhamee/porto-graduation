@@ -1,0 +1,71 @@
+[class*="col-"]{
+    width: 100%;
+    float: left;
+}
+@media only screen and (max-width: 600px) {
+    .formStyle .btnSend{
+        padding-left: 43%;
+    }
+    div .col-sm-5 img{
+        margin-top: 0px;
+        margin-bottom: 20px;
+        height: 200px;
+    }
+    div .chat{
+        padding-left: 0px;
+    }
+    div div .formStyle{
+        width: 100%;
+        padding: 10px;
+        margin-left: 0px;
+    }
+} 
+
+.col-sm-5 img{
+    width: 100%;
+    border-radius: 30px;
+    height: 300px;
+    margin-top: 50px;
+} 
+.chat{
+    padding-left: 40px;
+}
+.formStyle{
+    width: 70%;
+    padding: 20px;
+    margin-left: 15%;
+}
+.text1{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px ;
+}
+.text2{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+.card {
+    padding: 10px;
+}
+.btnSend{
+    padding-left: 45%;
+}
+.alert{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sendName{
+    margin: 2px;
+}
+
+.Msg{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+    text-shadow:  5px 5px 12px gold;
+    margin: 10px;
+}

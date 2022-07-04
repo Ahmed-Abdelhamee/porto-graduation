@@ -1,0 +1,42 @@
+[class*="col-"]{
+    width: 100%;
+    float: left;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+  }
+  .footer a{
+      display: block;
+  }
+}
+.footer{
+    height: auto;
+    background-color:  rgb(241, 239, 206) ;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    border-radius:10px;
+    padding-top: 15px;
+    /* padding-left: 50px; */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+.footer a{
+    color: rgb(163, 105, 105);
+    font-size: 27px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 6%;
+    padding-top: 15px;
+    text-align: center;
+}
+.footer a:hover{
+    color: red;
+}
+.portologo2{
+    padding-left: 12%;
+    padding-right: 12%;
+    margin-bottom: 20px;
+}

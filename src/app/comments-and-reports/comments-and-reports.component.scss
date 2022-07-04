@@ -1,0 +1,14 @@
+[class*="col-"]{
+    width: 100%;
+    float: left;
+}
+@media only screen and (width:700px) {
+}
+
+.card{
+    border:  7px solid gold;
+    margin-left: 100px;
+    // margin-bottom: 70px;
+    height: 400px;
+    margin-bottom: 20px;
+}

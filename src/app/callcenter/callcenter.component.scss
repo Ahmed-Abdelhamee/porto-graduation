@@ -1,0 +1,86 @@
+[class*="col-"]{
+    width: 100%;
+    float: left;
+}
+
+@media only screen and (max-width: 600px) {
+    div .callingMsg{
+        margin-top: 10px;
+    }
+    div .col-sm-5 .emailPhoto1{
+        display: block;
+    }
+    div .col-sm-7{
+        display: none;
+    }
+    .inputStyle .btnSend{
+        padding-left: 43%;
+    }
+    .col-sm-4 .callingPhoto{
+        margin-left: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+.formStyle{
+    width: 100%;
+}
+.text1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.text2{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+.btnSend{
+    padding-left: 45%;
+}
+.alert{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.emailPhoto1{
+    height: 140px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: none;
+}
+.emailPhoto2{
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 60px;
+    padding: 30px;
+}
+
+.callingMsg{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    padding-left: 30px;
+}
+
+.callingData{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    // background-color: black;
+}
+
+.callingPhoto {
+    border-radius: 60px;
+    margin-top: 50px;
+    margin-left: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    height: 250px;
+}
+

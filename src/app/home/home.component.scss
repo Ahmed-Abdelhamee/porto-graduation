@@ -1,0 +1,111 @@
+[class*="col-"]{
+    float: left;
+    width: 1005;
+}
+@media only screen and (max-width: 600px) {
+    #imgbg{
+        display: none;
+    }
+    div .imgMove{
+        height: 300px;
+        padding: 0px;
+    }
+    div #presentation{
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .container-fluid .textNightStyle{
+        font-size: 20px;
+    }
+    .container-fluid .textSunsetStyle{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .col-12 .nightphoto{
+        height: 290px;
+        padding: 0px;
+        border-radius: 20px;
+    }
+    .col-12 .textNightStyle{
+        padding-top: 10px;
+    }
+    .col-12 .sunsetPhoto{
+        height: 290px;
+        padding: 0px;
+        border-radius: 20px;
+    }
+    .col-12 .textSunsetStyle{
+        padding-top: 10px;
+    }
+    .sunsetPhoto{
+        height: 300px;
+    }
+  }
+.imgMove{
+    border-radius: 60px;
+    margin-bottom: 25px;
+    padding: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+#presentation{
+    color: rgb(107, 97, 91);
+    padding: 30px;
+    padding-top: 55px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 5px 5px 10px gold;
+}
+.portologo{
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 55px;
+    margin-bottom: 35px;
+}
+.card{
+    text-align: center;
+    margin-bottom: 45px;
+    height: 400px;
+}
+.card img{
+    border-radius: 0px;
+}
+.nightphoto{
+    border-radius: 60px;
+    padding: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.textNightStyle{
+    padding: 40px;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 25px ;
+    font-weight: bold;
+    text-shadow: 7px 7px 15px gold;
+}
+.textSunsetStyle{
+    padding: 40px;
+    padding-top: 50px;
+    //margin-bottom: 30px;
+    text-align: center;
+    font-size: 25px ;
+    font-weight: bold;
+    text-shadow: 7px 7px 15px gold;
+}
+.sunsetPhoto{
+    border-radius: 70px;
+    margin-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.divAlert{
+    font-weight: bold;
+    color: red;
+    text-shadow: 7px 7px 15px goldenrod;
+    background-color: rgb(255, 234, 115);
+    padding: 30px;
+    margin-top: 30px;
+}

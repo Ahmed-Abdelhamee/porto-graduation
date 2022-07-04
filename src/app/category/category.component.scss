@@ -1,0 +1,15 @@
+[class*="col-"]{
+    width: 100%;
+    float: left;
+}
+@media only screen and (width:700px) {
+}
+.card{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top:20px;
+}
+.div1{
+    height: 15px;
+}

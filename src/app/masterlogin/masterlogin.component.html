@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>masterlogin</title>
+</head>
+<body>
+    <div class="container col-12">
+        <div class="col-sm-4 masterLogo">
+            master
+        </div>
+
+        <div class="col-sm-4 login">
+            
+            <form #sign="ngForm" (ngSubmit)="check(sign)">
+<br>
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" #name="ngModel" ngModel>
+<br>
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" name="pwd" #pwd="ngModel" ngModel>
+<br>
+                <div class="asd">
+                    <input type="submit" value="master" class="btn">
+                </div>
+<br>
+            </form>
+            <div class="alert alert-danger" *ngIf="alertMsg">
+                {{alertMsg}}
+            </div>
+        </div>
+
+        <div class="col-sm-4 ">
+            <img src="assets\بورتووو.jpg" alt="portologo" class="portologo" width="100%" height="300px">
+        </div>
+    </div>
+</body>
+</html>

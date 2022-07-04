@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regist</title>
+</head>
+<body>
+    <div class="container-fluid">
+      
+        <div class="col-sm-5 formStyle">
+              <form #myform="ngForm" (ngSubmit)="regist(myform)">
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" #email="ngModel" ngModel>
+                </div>
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" #name="ngModel" ngModel>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter phone" name="phone" #name="ngModel" ngModel>
+                </div>
+                <div class="form-group form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="Singleroom " id="Singleroom " (click)="setsingle()" #Singleroom="ngModel" ngModel> Single room 500 LE<br>
+                    <input class="form-check-input" type="checkbox" name="Doubleroom " id="Doubleroom " (click)="setdouble()" #Doubleroom="ngModel" ngModel> Double room 1000 LE
+                  </label>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date arrive:</label>
+                    <input type="date" class="form-control" id="dateArrive" placeholder="Enter date arrive" name="dateArrive" #name="ngModel" ngModel>
+                </div>
+                <div class="form-group">
+                  <label for="date">Date leave:</label>
+                  <input type="date" class="form-control" id="dateleave" placeholder="Enter dateleave" name="dateleave" #name="ngModel" ngModel>
+              </div>
+
+              <div class="alert alert-danger text-center" *ngIf="checkRooms" style="font-size: 25px; font-weight: bold;">
+                sorry there is no chalet empty-معذراً لا يوجد شاليه فارغ للحجز  
+              </div>
+
+                <div class="btnRegister">
+                    <!-- <input type="submit" value="طلب الحجز" class="btn btn-primary btnRegister"> --> <!-- btn color we make-->
+                    <input type="submit" value="طلب الحجز" class="btn btn-warning btnRegister"> <!-- btn color for 3abaset-->
+                </div>
+              </form> <br>
+              <div class="alert alert-danger" *ngIf="errorMsg"> {{errorMsg}}</div>
+              <div class="alert alert-success" *ngIf="successMsg"> {{successMsg}}</div>
+        </div>
+        <div class="col-sm-7">
+          <p class="porto_Text"> * porto el so5na *</p>
+          <img src="assets\portoLogo.png" alt="portoLogo" width="100%" height="350px" id="portoimg">
+        </div>
+    </div>
+</body>
+</html> 

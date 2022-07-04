@@ -1,0 +1,58 @@
+[class*="col-"]{
+    width: 100%;
+    float: left;
+}
+@media only screen and (max-width: 600px) {
+    div .btnShow{
+        margin-left: 0px;
+        background-color: aqua;
+    }
+    div .btnRefresh{
+        margin-left: 0px;
+    }
+    div .card{
+        margin-left: 0px;
+    }
+  }
+.container{
+    padding-top: 20px;
+}
+
+ .btnShow{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    border-radius: 10px;
+}
+
+.btnRefresh{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.card{
+    background-color: white;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    border: 5px solid gray;
+    height: 600px;
+}
+
+h5{
+    font-weight: bold;
+}
+h4{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 5px;
+}
+.card button {
+    margin: 10px;
+    float: left;
+    width: 40%;
+}

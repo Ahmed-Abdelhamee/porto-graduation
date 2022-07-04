@@ -1,0 +1,46 @@
+[class*="col-"]{
+    width: 100%;
+    float: left;
+}
+@media only screen and (max-width: 600px) {
+    .col-sm-7 #portoimg{
+        height: 250px;
+        width: 100%;
+        border-radius: 30px;
+        padding: 0px;
+    }
+  }
+.formStyle{
+    font-weight: bold;
+    margin-top: 20px;
+    padding-left: 4%;
+}
+
+.btnRegister{
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.btnRegister button{
+    font-weight: bold;
+    width: 100%;
+}
+.alert{
+    text-align: center;
+    font-size: 20px;
+}
+.porto_Text{
+    text-align: center;
+    font-size: 40px ;
+    padding-top: 30px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    color: gold;
+    text-shadow: 5px 5px 10px gray;
+}
+#portoimg{
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 100px;
+    margin-top: 20px;
+}
